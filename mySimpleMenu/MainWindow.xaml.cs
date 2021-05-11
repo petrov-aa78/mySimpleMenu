@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+using mySimpleMenu.Views;
+
 namespace mySimpleMenu
 {
     /// <summary>
@@ -23,11 +25,23 @@ namespace mySimpleMenu
         public MainWindow()
         {
             InitializeComponent();
+            WorkSpace.Children.Add(new Page1());
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+            WorkSpace.Children.Add(new Page1());
+        }
 
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            WorkSpace.Children.Add(new Page2());
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            WorkSpace.Children.Add(new Page3());
         }
     }
+
 }
