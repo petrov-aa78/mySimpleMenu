@@ -28,6 +28,7 @@
                 
             </StackPanel>
         </Grid>
+        <!--Рабочая область-->
         <Grid Grid.Column="1" 
               Background="LightBlue"
               x:Name="WorkSpace">
